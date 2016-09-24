@@ -1,0 +1,7 @@
+<h1>SyachihokoDiary2</h1>
+<h2>一覧</h2>
+<% @users.each do |user|%>
+<%= link_to user.email, "/user_article/#{user.id}"%>
+<%= user.email%>
+<br>
+<% end %>

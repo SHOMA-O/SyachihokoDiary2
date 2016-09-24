@@ -1,0 +1,16 @@
+<h1>SyachihokoDiary2</h1>
+
+<%= paginate @user %>
+
+<% @user.each do |article|%>
+<%= article.title %><br>
+<%= article.body %><br>
+<%= article.author %><br>
+<% end %>
+
+<% if @user.empty? %>
+何も投稿がありません
+<% else %>
+<% end %>
+
+
